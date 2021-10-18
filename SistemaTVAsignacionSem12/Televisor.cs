@@ -30,7 +30,7 @@ namespace SistemaTVAsignacionSem12
         }
 
         //metodo para insertar o editar un registro
-        public Boolean newEditBook(string action)
+        public Boolean newEditTV(string action)
         {
             if (action == "new")
             {
@@ -41,7 +41,7 @@ namespace SistemaTVAsignacionSem12
             }
             else if (action == "edit")
             {
-                string query = "UPDATE book SET "
+                string query = "UPDATE televisor SET "
                     + "marca='" + _marca + "' ,"
                     + "modelo='" + _modelo + "',"
                     + "color='" + _color + "',"
@@ -57,7 +57,7 @@ namespace SistemaTVAsignacionSem12
         }
 
         //metodo para eliminar
-        public Boolean deleteBook()
+        public Boolean deleteTV()
         {
             string query = "DELETE FROM book WHERE tvId='" + _idTv + "'";
             crud.executeQuery(query);

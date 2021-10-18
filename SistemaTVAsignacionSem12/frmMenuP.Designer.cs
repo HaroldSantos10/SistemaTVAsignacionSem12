@@ -29,10 +29,15 @@ namespace SistemaTVAsignacionSem12
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabs = new MetroFramework.Controls.MetroTabControl();
             this.tabForm = new MetroFramework.Controls.MetroTabPage();
+            this.txtSize = new MetroFramework.Controls.MetroTextBox();
+            this.txtColor = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.txtYear = new MetroFramework.Controls.MetroTextBox();
             this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.btnSave = new MetroFramework.Controls.MetroButton();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
@@ -48,14 +53,14 @@ namespace SistemaTVAsignacionSem12
             this.lNew = new MetroFramework.Controls.MetroLink();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btnExit = new MetroFramework.Controls.MetroButton();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.txtYear = new MetroFramework.Controls.MetroTextBox();
-            this.txtSize = new MetroFramework.Controls.MetroTextBox();
-            this.txtColor = new MetroFramework.Controls.MetroTextBox();
+            this.actions = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabs.SuspendLayout();
             this.tabForm.SuspendLayout();
             this.tabData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTvs)).BeginInit();
+            this.actions.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -98,6 +103,106 @@ namespace SistemaTVAsignacionSem12
             this.tabForm.VerticalScrollbarHighlightOnWheel = false;
             this.tabForm.VerticalScrollbarSize = 10;
             // 
+            // txtSize
+            // 
+            // 
+            // 
+            // 
+            this.txtSize.CustomButton.Image = null;
+            this.txtSize.CustomButton.Location = new System.Drawing.Point(281, 1);
+            this.txtSize.CustomButton.Name = "";
+            this.txtSize.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtSize.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSize.CustomButton.TabIndex = 1;
+            this.txtSize.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSize.CustomButton.UseSelectable = true;
+            this.txtSize.CustomButton.Visible = false;
+            this.txtSize.Lines = new string[0];
+            this.txtSize.Location = new System.Drawing.Point(210, 197);
+            this.txtSize.MaxLength = 32767;
+            this.txtSize.Name = "txtSize";
+            this.txtSize.PasswordChar = '\0';
+            this.txtSize.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSize.SelectedText = "";
+            this.txtSize.SelectionLength = 0;
+            this.txtSize.SelectionStart = 0;
+            this.txtSize.ShortcutsEnabled = true;
+            this.txtSize.Size = new System.Drawing.Size(303, 23);
+            this.txtSize.TabIndex = 33;
+            this.txtSize.UseSelectable = true;
+            this.txtSize.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSize.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtColor
+            // 
+            // 
+            // 
+            // 
+            this.txtColor.CustomButton.Image = null;
+            this.txtColor.CustomButton.Location = new System.Drawing.Point(281, 1);
+            this.txtColor.CustomButton.Name = "";
+            this.txtColor.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtColor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtColor.CustomButton.TabIndex = 1;
+            this.txtColor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtColor.CustomButton.UseSelectable = true;
+            this.txtColor.CustomButton.Visible = false;
+            this.txtColor.Lines = new string[0];
+            this.txtColor.Location = new System.Drawing.Point(210, 151);
+            this.txtColor.MaxLength = 32767;
+            this.txtColor.Name = "txtColor";
+            this.txtColor.PasswordChar = '\0';
+            this.txtColor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtColor.SelectedText = "";
+            this.txtColor.SelectionLength = 0;
+            this.txtColor.SelectionStart = 0;
+            this.txtColor.ShortcutsEnabled = true;
+            this.txtColor.Size = new System.Drawing.Size(303, 23);
+            this.txtColor.TabIndex = 32;
+            this.txtColor.UseSelectable = true;
+            this.txtColor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtColor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(111, 236);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(34, 19);
+            this.metroLabel6.TabIndex = 30;
+            this.metroLabel6.Text = "Year";
+            // 
+            // txtYear
+            // 
+            // 
+            // 
+            // 
+            this.txtYear.CustomButton.Image = null;
+            this.txtYear.CustomButton.Location = new System.Drawing.Point(79, 1);
+            this.txtYear.CustomButton.Name = "";
+            this.txtYear.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtYear.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtYear.CustomButton.TabIndex = 1;
+            this.txtYear.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtYear.CustomButton.UseSelectable = true;
+            this.txtYear.CustomButton.Visible = false;
+            this.txtYear.Lines = new string[0];
+            this.txtYear.Location = new System.Drawing.Point(210, 236);
+            this.txtYear.MaxLength = 32767;
+            this.txtYear.Name = "txtYear";
+            this.txtYear.PasswordChar = '\0';
+            this.txtYear.ReadOnly = true;
+            this.txtYear.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtYear.SelectedText = "";
+            this.txtYear.SelectionLength = 0;
+            this.txtYear.SelectionStart = 0;
+            this.txtYear.ShortcutsEnabled = true;
+            this.txtYear.Size = new System.Drawing.Size(101, 23);
+            this.txtYear.TabIndex = 31;
+            this.txtYear.UseSelectable = true;
+            this.txtYear.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtYear.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.DimGray;
@@ -127,6 +232,7 @@ namespace SistemaTVAsignacionSem12
             this.btnSave.UseCustomBackColor = true;
             this.btnSave.UseSelectable = true;
             this.btnSave.UseStyleColors = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // metroLabel4
             // 
@@ -351,105 +457,27 @@ namespace SistemaTVAsignacionSem12
             this.btnExit.UseStyleColors = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // metroLabel6
+            // actions
             // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(111, 236);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(34, 19);
-            this.metroLabel6.TabIndex = 30;
-            this.metroLabel6.Text = "Year";
+            this.actions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.actions.Name = "metroContextMenu1";
+            this.actions.Size = new System.Drawing.Size(116, 52);
             // 
-            // txtYear
+            // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.editToolStripMenuItem.Text = "Edit";
             // 
+            // deleteToolStripMenuItem
             // 
-            // 
-            this.txtYear.CustomButton.Image = null;
-            this.txtYear.CustomButton.Location = new System.Drawing.Point(79, 1);
-            this.txtYear.CustomButton.Name = "";
-            this.txtYear.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtYear.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtYear.CustomButton.TabIndex = 1;
-            this.txtYear.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtYear.CustomButton.UseSelectable = true;
-            this.txtYear.CustomButton.Visible = false;
-            this.txtYear.Lines = new string[0];
-            this.txtYear.Location = new System.Drawing.Point(210, 236);
-            this.txtYear.MaxLength = 32767;
-            this.txtYear.Name = "txtYear";
-            this.txtYear.PasswordChar = '\0';
-            this.txtYear.ReadOnly = true;
-            this.txtYear.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtYear.SelectedText = "";
-            this.txtYear.SelectionLength = 0;
-            this.txtYear.SelectionStart = 0;
-            this.txtYear.ShortcutsEnabled = true;
-            this.txtYear.Size = new System.Drawing.Size(101, 23);
-            this.txtYear.TabIndex = 31;
-            this.txtYear.UseSelectable = true;
-            this.txtYear.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtYear.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtSize
-            // 
-            // 
-            // 
-            // 
-            this.txtSize.CustomButton.Image = null;
-            this.txtSize.CustomButton.Location = new System.Drawing.Point(281, 1);
-            this.txtSize.CustomButton.Name = "";
-            this.txtSize.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtSize.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSize.CustomButton.TabIndex = 1;
-            this.txtSize.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSize.CustomButton.UseSelectable = true;
-            this.txtSize.CustomButton.Visible = false;
-            this.txtSize.Lines = new string[0];
-            this.txtSize.Location = new System.Drawing.Point(210, 197);
-            this.txtSize.MaxLength = 32767;
-            this.txtSize.Name = "txtSize";
-            this.txtSize.PasswordChar = '\0';
-            this.txtSize.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSize.SelectedText = "";
-            this.txtSize.SelectionLength = 0;
-            this.txtSize.SelectionStart = 0;
-            this.txtSize.ShortcutsEnabled = true;
-            this.txtSize.Size = new System.Drawing.Size(303, 23);
-            this.txtSize.TabIndex = 33;
-            this.txtSize.UseSelectable = true;
-            this.txtSize.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSize.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtColor
-            // 
-            // 
-            // 
-            // 
-            this.txtColor.CustomButton.Image = null;
-            this.txtColor.CustomButton.Location = new System.Drawing.Point(281, 1);
-            this.txtColor.CustomButton.Name = "";
-            this.txtColor.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtColor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtColor.CustomButton.TabIndex = 1;
-            this.txtColor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtColor.CustomButton.UseSelectable = true;
-            this.txtColor.CustomButton.Visible = false;
-            this.txtColor.Lines = new string[0];
-            this.txtColor.Location = new System.Drawing.Point(210, 151);
-            this.txtColor.MaxLength = 32767;
-            this.txtColor.Name = "txtColor";
-            this.txtColor.PasswordChar = '\0';
-            this.txtColor.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtColor.SelectedText = "";
-            this.txtColor.SelectionLength = 0;
-            this.txtColor.SelectionStart = 0;
-            this.txtColor.ShortcutsEnabled = true;
-            this.txtColor.Size = new System.Drawing.Size(303, 23);
-            this.txtColor.TabIndex = 32;
-            this.txtColor.UseSelectable = true;
-            this.txtColor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtColor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.deleteToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // frmMenuP
             // 
@@ -470,6 +498,7 @@ namespace SistemaTVAsignacionSem12
             this.tabForm.PerformLayout();
             this.tabData.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgTvs)).EndInit();
+            this.actions.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,6 +527,9 @@ namespace SistemaTVAsignacionSem12
         private MetroFramework.Controls.MetroTextBox txtYear;
         private MetroFramework.Controls.MetroTextBox txtSize;
         private MetroFramework.Controls.MetroTextBox txtColor;
+        private MetroFramework.Controls.MetroContextMenu actions;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
 
