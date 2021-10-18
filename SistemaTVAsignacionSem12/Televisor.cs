@@ -29,5 +29,41 @@ namespace SistemaTVAsignacionSem12
             return crud.select(query);
         }
 
+        //metodo para insertar o editar un registro
+        public Boolean newEditBook(string action)
+        {
+            if (action == "new")
+            {
+                string query = "INSERT INTO televisor(marca, modelo, color, size, year)" +
+                    "VALUES ('" + _idTv + "', '" + _marca + "', '" + _modelo + "', '" + _color + "', '" + _size + "', '" + _year + "')";
+                crud.executeQuery(query); //llamato al metodo executeQuery de la clase Crud
+                return true;
+            }
+            else if (action == "edit")
+            {
+                string query = "UPDATE book SET "
+                    + "marca='" + _marca + "' ,"
+                    + "modelo='" + _modelo + "',"
+                    + "color='" + _color + "',"
+                    + "size='" + _size + "',"
+                    + "year='" + _year + "'"
+                    + "WHERE "
+                    + "tvId='" + _idTv + "'";
+                crud.executeQuery(query);
+                return true;
+            }
+
+            return false;
+        }
+
+        //metodo para eliminar
+        public Boolean deleteBook()
+        {
+            string query = "DELETE FROM book WHERE tvId='" + _idTv + "'";
+            crud.executeQuery(query);
+            return true;
+        }
+
+
     }
 }
